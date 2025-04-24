@@ -51,19 +51,16 @@
     </main>
 
     <script>
-        fetch('https://mytools-jkw0.onrender.com/', {
-            credentials: 'include'
-            })
-          .then(res => {
-            if (!res.ok) throw new Error("Unauthorized");
-            return res.json();
-          })
-          .then(data => {
-            document.getElementById('userData').textContent = JSON.stringify(data);
-          })
-          .catch(err => {
-            document.getElementById('userData').textContent = "You must log in first.";
-          });
+        fetch("https://mytools-server.onrender.com", {
+          credentials: "include"
+        })
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("userData").textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(() => {
+          document.getElementById("userData").textContent = "Not logged in or error occurred.";
+        });
       </script>
 </body>
 </html>
