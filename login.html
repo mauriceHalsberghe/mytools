@@ -22,7 +22,7 @@
         document.getElementById("loginForm").addEventListener("submit", async e => {
           e.preventDefault();
           const form = new FormData(e.target);
-          const res = await fetch("https://mytools-server.onrender.com/login", {
+          const res = await fetch("https://mytools-server.onrender.com/", {
             method: "POST",    // Ensure this is POST, not GET
             credentials: "include",   // Include session cookies for backend
             headers: { "Content-Type": "application/json" },
