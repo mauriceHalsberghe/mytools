@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
@@ -14,6 +15,11 @@ app.use(session({
   secret: 'supersecretkey',
   resave: false,
   saveUninitialized: true
+}));
+
+app.use(cors({
+  origin: 'https://mauricehalsberghe.github.io/mytools',
+  credentials: true
 }));
 
 // Redirect logged-in users from /login.html to /index.html

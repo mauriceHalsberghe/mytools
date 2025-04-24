@@ -51,7 +51,9 @@
     </main>
 
     <script>
-        fetch('/userdata')
+        fetch('https://my-site-backend.onrender.com/userdata', {
+            credentials: 'include'
+            })
           .then(res => {
             if (!res.ok) throw new Error("Unauthorized");
             return res.json();
