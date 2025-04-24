@@ -9,20 +9,22 @@
     <main>
         <h1>Log in</h1>
 
-        <form>
+        <form action="/login" method="POST">
             <div>
                 <label for="username">
                     Username
                 </label>
-                <input id="username" type="text">
+                <input name="username" id="username" type="text">
             </div>
 
             <div>
                 <label for="password">
                     Password
                 </label>
-                <input id="password" type="password">
+                <input name="password" id="password" type="password">
             </div>
+
+            <button type="submit">Login</button>
 
             <p>No Account yet? <a href="./register.html">Register</a></p>
         </form>

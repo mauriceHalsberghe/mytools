@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./src/style/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/">Mt</a>
-            <ul>
-                <li><a href="./pages/house.html">House</a></li>
-                <li><a href="./pages/school.html">School</a></li>
-                <li><a href="./pages/game.html">Other</a></li>
+    <header class="header">
+        <a class="header__logo" href="/">Mt</a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="./pages/house.html">House</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/school.html">School</a></li>
+                <l class="nav__item"i><a class="nav__link" href="./pages/game.html">Other</a></l>
             </ul>
-            <a href="./pages/login.html">Mt</a>
         </nav>
+        <a class="header__logout" href="./login.html">Logout</a>
     </header>
 
     <main>
@@ -45,6 +45,23 @@
 
             </section>
         </section>
+
+        <div id="userData">test</div>
+
     </main>
+
+    <script>
+        fetch('/userdata')
+          .then(res => {
+            if (!res.ok) throw new Error("Unauthorized");
+            return res.json();
+          })
+          .then(data => {
+            document.getElementById('userData').textContent = JSON.stringify(data);
+          })
+          .catch(err => {
+            document.getElementById('userData').textContent = "You must log in first.";
+          });
+      </script>
 </body>
 </html>
