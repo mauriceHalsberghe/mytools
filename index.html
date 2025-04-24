@@ -50,14 +50,14 @@
 
     <script>
         fetch("https://mytools-server.onrender.com/userdata", {
-          credentials: "include"
+            credentials: "include"  // Ensure cookies (session) are included
         })
         .then(res => res.json())
         .then(data => {
-          document.getElementById("userData").textContent = JSON.stringify(data, null, 2);
+            document.getElementById("userData").textContent = JSON.stringify(data, null, 2);
         })
         .catch(() => {
-          document.getElementById("userData").textContent = "Not logged in or error occurred.";
+            document.getElementById("userData").textContent = "Not logged in or error occurred.";
         });
     </script>
 </body>
