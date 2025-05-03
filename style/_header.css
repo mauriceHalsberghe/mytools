@@ -1,0 +1,11 @@
+.header {
+    color: var(--primary-100);
+    margin: 4rem;
+    margin-right: 0;
+    padding-right: 2rem;
+    border-right: 4px solid var(--bg-100);
+}
+
+.header__logo {
+    color: var(--primary-100);
+}

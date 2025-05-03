@@ -1,0 +1,39 @@
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav__item,
+.nav__link {
+    color: var(--primary-100);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__item--new {
+    margin-top: 3rem;
+    color: var(--accent-100);
+    cursor: pointer;
+    .nav__icon {
+        background-color: transparent;
+    }
+    transition: color 200ms ease;
+    &:hover {
+        color: var(--primary-100);
+        .nav__icon {
+            transition: fill 200ms ease;
+            fill: var(--primary-100);
+        }
+    }
+}
+
+.nav__icon {
+    background-color: var(--primary-100);
+    border-radius: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}

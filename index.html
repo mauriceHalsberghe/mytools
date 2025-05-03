@@ -12,41 +12,39 @@
         <a class="header__logo" href="/">Mt</a>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="./pages/house.html">House</a></li>
-                <li class="nav__item"><a class="nav__link" href="./pages/school.html">School</a></li>
-                <l class="nav__item"><a class="nav__link" href="./pages/game.html">Other</a></l>
-            </ul>
+                <li class="nav__item"><a class="nav__link" href="./pages/house.html">
+                    <svg class="nav__icon" width="32" height="32">
+                        <use href="./assets/sprites.svg#house-icon"></use>
+                    </svg>
+                    House
+                </a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/school.html">
+                    <svg class="nav__icon" width="32" height="32">
+                        <use href="./assets/sprites.svg"></use>
+                    </svg> 
+                    School
+                </a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/game.html">
+                    <svg class="nav__icon" width="32" height="32">
+                        <use href="./assets/sprites.svg"></use>
+                    </svg>
+                    Other
+                </a></li>
+                <li class="nav__item nav__item--new">
+                    <svg class="nav__icon" fill="var(--accent-100)" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52 0C56.4183 0 60 3.58172 60 8V52C60 56.4183 56.4183 60 52 60H8C3.58172 60 0 56.4183 0 52V8C0 3.58172 3.58172 0 8 0H52ZM30 11.5C28.6193 11.5 27.5 12.6193 27.5 14V27.5H14C12.6193 27.5 11.5 28.6193 11.5 30C11.5 31.3807 12.6193 32.5 14 32.5H27.5V46C27.5 47.3807 28.6193 48.5 30 48.5C31.3807 48.5 32.5 47.3807 32.5 46V32.5H46C47.3807 32.5 48.5 31.3807 48.5 30C48.5 28.6193 47.3807 27.5 46 27.5H32.5V14C32.5 12.6193 31.3807 11.5 30 11.5Z"/>
+                    </svg>                        
+                    New Category
+                </li>
+            </ul>   
         </nav>
-        <a class="header__logout" href="./login.html">Logout</a>
+        <a class="header__logout" href="./login.html">Log Out</a>
     </header>
 
-    <!-- <main>
-        <section>
-            <h1>MyTools</h1>
-            <section>
-                <div>
-                    <h2>House</h2>
-                    <p>All household related tools</p>
-                    <a href="./pages/house.html">House</a>
-                </div>
+    <main>
+        <section class="images"></section>
+    </main>
 
-                <div>
-                    <h2>School</h2>
-                    <p>All school related tools</p>
-                    <a href="./pages/school.html">School</a>
-                </div>
-
-                <div>
-                    <h2>Other</h2>
-                    <p>All other related tools</p>
-                    <a href="./pages/game.html">Other</a>
-                </div>
-            </section>
-        </section>
-
-        <div id="userData">test</div>
-
-    </main> -->
 
     <script type="module" src="./scripts/app.js"></script>
 </body>
