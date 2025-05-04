@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | MyTools</title>
+
+    <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
     <main>
-        <h1>Log in</h1>
+        <section class="login">
+            <h1 class="login__title">Log in</h1>
 
-        <form id="loginForm" action="/login" method="POST">
-            <input name="username" placeholder="Username" required>
-            <input name="password" type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+            <form class="login__form" id="loginForm" action="/login" method="POST">
+                <div class="login__field">
+                    <label class="login__label" for="username">Username</label>
+                    <input class="login__input" name="username" placeholder="Username" required>
+                </div>
+                <div class="login__field">
+                    <label class="login__label" for="password">Password</label>
+                    <input class="login__input" name="password" type="password" placeholder="Password" required>
+                </div>
+                <button class="button login__button" type="submit">Login</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>

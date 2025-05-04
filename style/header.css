@@ -1,6 +1,6 @@
 .header {
     color: var(--primary-100);
-    margin: 4rem;
+    margin: 3rem;
     margin-right: 0;
     padding-right: 2rem;
     border-right: 4px solid var(--bg-100);
@@ -9,6 +9,13 @@
 .header__logo {
     display: block;
     margin-bottom: 4rem;
+    .header__icon {
+        color: var(--primary-100);
+        transition: color 200ms ease;
+        &:hover {
+            color: var(--primary-200);
+        }
+    }
 }
 
 .header__logout {
@@ -18,8 +25,19 @@
     font-size: 24px;
     margin-top: 8rem;
     color: var(--accent-100);
+    transition: color 200ms ease;
     img {
         width: 2rem;
-
+    }
+    &:hover {
+        color: var(--primary-200);
+        .header__icon {
+            color: var(--primary-200);
+        }
+    }
+    .header__icon {
+        color: var(--primary-300);
+        transition: color 200ms ease;
     }
 }
+

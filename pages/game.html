@@ -5,20 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyTools</title>
 
-    <link rel="stylesheet" href="../src/style/main.css">
+    <link rel="stylesheet" href="../style/main.css">
 
 </head>
 <body>
     <header class="header">
-        <a class="header__logo" href="/">Mt</a>
+        <a class="header__logo" href="/">
+            <svg class="header__icon" width="180">
+                <use href="../assets/icons/sprites.svg#logo-sprite"></use>
+            </svg>
+        </a>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="./house.html">House</a></li>
-                <li class="nav__item"><a class="nav__link" href="./school.html">School</a></li>
-                <l class="nav__item"i><a class="nav__link" href="./game.html">Other</a></l>
-            </ul>
+                <li class="nav__item"><a class="nav__link" href="./house.html">
+                    <svg class="nav__icon" width="32" height="32">
+                        <use href="../assets/icons/sprites.svg#house-icon"></use>
+                    </svg>
+                    Household
+                </a></li>
+                <li class="nav__item"><a class="nav__link" href="./school.html">
+                    <svg class="nav__icon" width="32" height="32">
+                        <use href="../assets/icons/sprites.svg#house-icon"></use>
+                    </svg>
+                    School
+                </a></li>
+                <li class="nav__item nav__item--current"><a class="nav__link" href="./game.html">
+                    <svg class="nav__icon" width="32" height="32">
+                        <use href="../assets/icons/sprites.svg#house-icon"></use>
+                    </svg>
+                    Other
+                </a></li>
+            </ul>   
         </nav>
-        <a class="header__logout" href="../login.html">Logout</a>
+        <a class="header__logout" href="./login.html">
+            <img src="../assets/icons/logout.svg">
+            Log Out
+        </a>
     </header>
 
 

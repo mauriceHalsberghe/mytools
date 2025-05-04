@@ -1,0 +1,7 @@
+.login {
+    color: white;
+    background-color: var(--bg-200);
+    border-radius: var(--border-radius);
+    width: fit-content;
+    margin: auto;
+}
