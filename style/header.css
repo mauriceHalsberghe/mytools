@@ -7,5 +7,19 @@
 }
 
 .header__logo {
-    color: var(--primary-100);
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.header__logout {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 24px;
+    margin-top: 8rem;
+    color: var(--accent-100);
+    img {
+        width: 2rem;
+
+    }
 }
