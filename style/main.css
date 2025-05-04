@@ -1,6 +1,6 @@
 @import url('./reset.css');
-@import url('./_header.css');
-@import url('./_nav.css');
+@import url('./header.css');
+@import url('./nav.css');
 
 @font-face {
     font-family: 'Coolvetica';
