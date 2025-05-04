@@ -3,6 +3,7 @@
 @import url('./header.css');
 @import url('./nav.css');
 @import url('./login.css');
+@import url('./button.css');
 
 @font-face {
     font-family: 'Coolvetica';
@@ -42,4 +43,10 @@ a {
 ul {
     padding: 0;
     list-style: none;
+}
+
+@media (max-width: 32rem) {
+    body {
+        flex-direction: column;
+    }
 }

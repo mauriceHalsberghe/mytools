@@ -1,0 +1,26 @@
+.button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    height: fit-content;
+}
+
+.button--menu {
+    display: none;
+}
+
+@media (max-width: 32rem) {
+    .button--menu {
+        display: block;
+        background-color: var(--bg-200);
+        color: var(--accent-100);
+        svg {
+            padding: 0.25rem;
+            min-width: 2.5rem;
+            min-height: 2.5rem;
+            color: white;
+        }
+    }
+}

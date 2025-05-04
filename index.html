@@ -14,34 +14,42 @@
                 <use href="./assets/icons/sprites.svg#logo-sprite"></use>
             </svg>
         </a>
-        <nav class="nav">
+
+        <button class="button button--menu">
+            <svg width="48" height="48">
+                <use href="./assets/icons/sprites.svg#menu-icon"></use>
+            </svg>
+        </button>
+
+        <nav class="nav nav--hidden">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="./pages/house.html">
-                    <svg class="nav__icon" width="32" height="32">
+                    <svg class="nav__icon" width="48" height="48">
                         <use href="./assets/icons/sprites.svg#house-icon"></use>
                     </svg>
                     Household
                 </a></li>
                 <li class="nav__item"><a class="nav__link" href="./pages/school.html">
-                    <svg class="nav__icon" width="32" height="32">
+                    <svg class="nav__icon" width="48" height="48">
                         <use href="./assets/icons/sprites.svg#house-icon"></use>
                     </svg>
                     School
                 </a></li>
                 <li class="nav__item"><a class="nav__link" href="./pages/game.html">
-                    <svg class="nav__icon" width="32" height="32">
+                    <svg class="nav__icon" width="48" height="48">
                         <use href="./assets/icons/sprites.svg#house-icon"></use>
                     </svg>
                     Other
                 </a></li>
-            </ul>   
+            </ul>
+
+            <a class="nav__logout" href="./login.html">
+                <svg class="nav__icon" width="48" height="48">
+                    <use href="./assets/icons/sprites.svg#logout-icon"></use>
+                </svg>
+                Log Out
+            </a>
         </nav>
-        <a class="header__logout" href="./login.html">
-            <svg class="header__icon" width="32" height="32">
-                <use href="./assets/icons/sprites.svg#logout-icon"></use>
-            </svg>
-            Log Out
-        </a>
     </header>
 
     <main>
@@ -49,5 +57,6 @@
 
 
     <script type="module" src="./scripts/app.js"></script>
+    <script src="./scripts/nav.js"></script>
 </body>
 </html>
