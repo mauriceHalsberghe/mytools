@@ -1,10 +1,10 @@
-@import url(./reset.css);
+@import url('./reset.css');
 @import url('./_header.css');
 @import url('./_nav.css');
 
 @font-face {
     font-family: 'Coolvetica';
-    src: url('/fonts/Coolvetica.otf') format('opentype');
+    src: url('../assets/fonts/Coolvetica.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
