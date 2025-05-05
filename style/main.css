@@ -45,7 +45,7 @@ ul {
     list-style: none;
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 40rem) {
     body {
         flex-direction: column;
     }

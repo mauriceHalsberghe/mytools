@@ -4,7 +4,7 @@
     margin-right: 0;
     padding-right: 2rem;
     border-right: 4px solid var(--bg-100);
-    width: 20rem;
+    width: 24rem;
 }
 
 .header__logo {
@@ -19,7 +19,7 @@
     }
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 40rem) {
     .header {
         width: auto;
         display: flex;

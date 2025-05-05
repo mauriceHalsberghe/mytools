@@ -70,7 +70,7 @@
     }
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 40rem) {
     .nav--hidden {
         display: none;
     }
@@ -81,13 +81,15 @@
         position: absolute;
         top: 8rem;
         left: 0;
-
+    }
+    .nav__list {
+        gap: 0rem;
     }
     .nav__item {
-        border-bottom: 2px solid var(--bg-100);
-        padding: 1rem;
+        border-bottom: 4px solid var(--bg-100);
+        padding: 1.5rem;
     }
     .nav__logout {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
     }
 }
