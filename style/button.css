@@ -11,16 +11,21 @@
     display: none;
 }
 
+.button--hidden {
+    display: none;
+}
+
 @media (max-width: 40rem) {
     .button--menu {
         display: block;
         background-color: var(--bg-200);
         color: var(--accent-100);
-        svg {
+        .button__burger, 
+        .button__close {
+            color: var(--primary-300);
             padding: 0.25rem;
             min-width: 2.5rem;
             min-height: 2.5rem;
-            color: white;
         }
     }
 }
