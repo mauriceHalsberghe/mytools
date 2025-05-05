@@ -5,36 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Mytools</title>
 
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyTools" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
     <link rel="stylesheet" href="./style/main.css">
+
 </head>
 <body>
     <main>
-        <h1>Create Account</h1>
-        <form>
-            <div>
-                <label for="username">
-                    Username
-                </label>
-                <input id="username" type="text">
-            </div>
+        <section class="login">
+            <h1 class="login__title">Create Account</h1>
 
-            <div>
-                <label for="email">
-                    Email
-                </label>
-                <input id="email" type="email">
-            </div>
+            <form class="login__form" id="registerForm" action="/register" method="POST">
+                <div class="login__field">
+                    <label class="login__label" for="username">
+                        Username
+                    </label>
+                    <input class="login__input" id="username" type="text" placeholder="Type your username" required>
+                </div>
+    
+                <div class="login__field">
+                    <label class="login__label" for="email">
+                        Email
+                    </label>
+                    <input class="login__input" id="email" type="email" placeholder="Type your email" required>
+                </div>
+    
+                <div class="login__field">
+                    <label class="login__label" for="password">
+                        Password
+                    </label>
+                    <input class="login__input" id="password" type="password" placeholder="Type your password" required>
+                </div>
 
-            <div>
-                <label for="password">
-                    Password
-                </label>
-                <input id="password" type="password">
-            </div>
+                <button class="button button--login" type="submit">Create account</button>
 
-            <p>Already an account? <a href="./login.html">Login</a></p>
+            </form>
+            <p class="login__subtitle">Already an account? <a class="login__link" href="./login.html">Login</a></p>
 
-        </form>
+        </section>
+
     </main>
     
 </body>

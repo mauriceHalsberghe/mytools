@@ -7,6 +7,16 @@
     height: fit-content;
 }
 
+.button--login {
+    margin-top: 1rem;
+    color: var(--primary-100);
+    font-size: 1.2rem;
+    background-color: var(--accent-100);
+    &:hover {
+        background-color: var(--primary-300);
+    }
+}
+
 .button--menu {
     display: none;
 }

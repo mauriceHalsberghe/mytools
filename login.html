@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | MyTools</title>
 
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyTools" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
     <link rel="stylesheet" href="./style/main.css">
+
 </head>
 <body>
     <main>
         <section class="login">
-            <h1 class="login__title">Log in</h1>
+            <h1 class="login__title">Login</h1>
 
             <form class="login__form" id="loginForm" action="/login" method="POST">
                 <div class="login__field">
-                    <label class="login__label" for="username">Username</label>
-                    <input class="login__input" name="username" placeholder="Username" required>
+                    <label class="login__label" for="username">
+                        Username
+                    </label>
+                    <input class="login__input" id="username" name="username" placeholder="Type your username" required>
                 </div>
                 <div class="login__field">
-                    <label class="login__label" for="password">Password</label>
-                    <input class="login__input" name="password" type="password" placeholder="Password" required>
+                    <label class="login__label" for="password">
+                        Password
+                    </label>
+                    <input class="login__input" id="password" name="password" type="password" placeholder="Type your password" required>
                 </div>
-                <button class="button login__button" type="submit">Login</button>
+                <button class="button button--login" type="submit">Login</button>
             </form>
+            <p class="login__subtitle">No account yet? <a class="login__link" href="./register.html">Create account</a></p>
         </section>
     </main>
 </body>

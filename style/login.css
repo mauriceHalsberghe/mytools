@@ -3,5 +3,55 @@
     background-color: var(--bg-200);
     border-radius: var(--border-radius);
     width: fit-content;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+    padding: 3rem;
+}
+
+.login__title {
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__label {
+    color: var(--primary-300);
+    font-size: 1.2rem;
+}
+
+.login__input {
+    color: var(--primary-100);
+    font-size: 1.35rem;
+    border: none;
+    background: transparent;
+    border-bottom: var(--bg-100) solid 2px;
+    &::placeholder {
+        color: var(--bg-100);
+    }
+}
+
+.login__subtitle {
+    margin-top: 3rem;
+    color: var(--primary-300);
+}
+
+.login__link {
+    color: var(--primary-200);
+    &:hover {
+        color: var(--primary-100);
+        text-decoration: underline;
+    }
 }
