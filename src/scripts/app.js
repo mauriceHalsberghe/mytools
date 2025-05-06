@@ -1,6 +1,22 @@
 const userId = 1;
 const URL = "https://mytools-server.onrender.com"
 
+
+// const token = localStorage.getItem('token');
+//   if (!token) {
+//     window.location.href = 'login.html';
+//   }
+
+
+
+
+
+
+
+
+
+
+
 async function getData(slug) {
     try {
       const response = await fetch(`${URL}/${slug}`, {
