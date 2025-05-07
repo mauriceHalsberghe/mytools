@@ -1,0 +1,73 @@
+.bridge {
+    color: white;
+    font-family: sans-serif;
+    h1 {
+        margin: 1rem;
+    }
+
+    table {
+        width: 30rem;
+        text-align: center;
+    }
+    tr {
+        height: 2.5rem;
+        margin: 1rem 0;
+        input {
+            text-align: center;
+            width: 5rem;
+        }
+    }
+}
+
+.bridge__content {
+    gap: 3rem;
+    display: flex;
+    margin: 1.5rem;
+}
+
+.bridge__setup {
+    background-color: var(--bg-200);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+
+}
+
+.bridge__game {
+    background-color: var(--bg-200);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    padding-left: 2rem;
+}
+
+.bridge__chart {
+    width:100%;
+    max-width:95vw;
+    max-height:35rem;
+    background-color:var(--bg-200);
+    padding:2rem;
+    margin: 1.5rem;
+    border-radius: var(--border-radius);
+
+}
+
+.bridge__playersForm {
+    width: 15rem;
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-direction: column;
+}
+
+.playerTurn {
+    position: relative;
+    &::before {
+        content: '>';
+        position: absolute;
+        left: -1.5rem;
+        top: -0.4rem;
+        font-weight: 900;
+        font-size: 2rem;
+        color: white;
+        color: dodgerblue
+    }
+}

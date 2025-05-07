@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boerenbridge</title>
+    
+        <link rel="icon" type="image/png" href="../../src/assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../../src/assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../../src/assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../src/assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyTools" />
+        <link rel="manifest" href="../../src/assets/favicon/site.webmanifest" />
+        
+        <link rel="stylesheet" href="../../src/style/main.css">
+    
+    </head>
+<body>
+    <main class="bridge">
+        <h1>Chinees Poepen</h1>
+        <button class="bridge__reset">Reset</button>
+
+        <section class="bridge__content">
+            <div class="bridge__setup">
+                <h2>Aantal spelers: <span class="bridge__playerAmount"></span></h2>
+    
+                <button class="bridge__add">+ Speler</button>
+                <button class="bridge__remove">- Speler</button>
+    
+                <form class="bridge__playersForm">
+                </form>
+                <button class="bridge__start">Start spel</button>
+            </div>
+
+            <div class="bridge__game">
+                <h2>Ronde: <span class="bridge__roundNumber"></span></h2>
+                <table>
+                </table>
+
+                  <button class="bridge__nextRound">Volgende Ronde</button>
+            </div>
+
+
+        </section>
+
+        <canvas id="myChart" class="bridge__chart"></canvas>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script src="./bridgeSetup.js"></script>
+    <script src="./bridgeGame.js"></script>
+    <script src="./bridgeChart.js"></script>
+
+
+</body>
+</html>
