@@ -1,0 +1,8 @@
+.content {
+    background-color: var(--bg-200);
+    width: 20rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2rem;
+    color: var(--primary-100);
+}

@@ -1,9 +1,6 @@
 .bridge {
     color: white;
     font-family: sans-serif;
-    h1 {
-        margin: 1rem;
-    }
 
     table {
         width: 30rem;
@@ -16,7 +13,42 @@
             text-align: center;
             width: 5rem;
         }
+        .player {
+            font-size: 1.2rem;
+        }
     }
+}
+
+.bridge__reset,
+.bridge__add,
+.bridge__remove,
+.bridge__start,
+.bridge__nextRound {
+    height: fit-content;
+    cursor: pointer;
+    background-color: var(--primary-300);
+    padding: 0.25rem;
+    border-radius: var(--border-radius);
+    border: 0;
+}
+
+.bridge__add {
+    background-color: rgb(173, 218, 160);
+}
+.bridge__remove {
+    background-color: rgb(218, 160, 160);
+}
+.bridge__start,
+.bridge__nextRound {
+    background-color: rgb(160, 196, 218);
+}
+
+
+.bridge__header {
+    gap: 2rem;
+    align-items: center;
+    display: flex;
+    margin: 2rem 0 0 2rem;
 }
 
 .bridge__content {
@@ -47,7 +79,6 @@
     padding:2rem;
     margin: 1.5rem;
     border-radius: var(--border-radius);
-
 }
 
 .bridge__playersForm {

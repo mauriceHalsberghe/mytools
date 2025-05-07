@@ -5,6 +5,8 @@
 @import url('./login.css');
 @import url('./button.css');
 @import url('./bridge.css');
+@import url('./content.css');
+
 
 @font-face {
     font-family: 'Coolvetica';
